@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamestown 1607: Colony Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="game-container">
+        
+        <header>
+            <h1>JAMESTOWN 1607</h1>
+            <div id="date-display">Week 1, Year 1607</div>
+        </header>
+
+        <div id="interface">
+            
+            <div id="stats-panel">
+                <div class="stat-box">
+                    <h3>Population</h3>
+                    <span id="pop-count">104</span> / <span id="pop-cap">150</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Rations</h3>
+                    <span id="food-count">500</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Morale</h3>
+                    <span id="morale-count">100%</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Wood</h3>
+                    <span id="wood-count">50</span>
+                </div>
+                
+                <div id="notifications">
+                    <p>Welcome to the New World.</p>
+                </div>
+            </div>
+
+            <div id="event-panel">
+                <div id="image-frame">
+                    <div id="scene-image"></div> 
+                </div>
+                
+                <div id="story-text">
+                    You have made landfall on a marshy peninsula. The air is thick with humidity and insects. The men are eager to find gold, but you know survival comes first. What are your orders?
+                </div>
+
+                <div id="choices-area">
+                    <button class="choice-btn" onclick="console.log('Clicked 1')">Build a Fort (Costs Wood)</button>
+                    <button class="choice-btn" onclick="console.log('Clicked 2')">Scout for Food (Risk of Injury)</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scenarios.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
